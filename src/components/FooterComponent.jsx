@@ -3,9 +3,9 @@ import {Link} from "react-router-dom"
 
 const FooterComponent = () => {
   return (
-    <div className="footer py-5">
+    <div className="footer py-5 ">
       <Container>
-        <Row className="d-flex justify-content-between">
+        <Row className="d-flex justify-content-between bg-light p-5 rounded-4">
           <Col lg="5">
             <h3 className="fw-bold">Visi</h3>
             <p className="desc">Menjadi penyedia pelatihan digital terkemuka yang diakui secara global,
@@ -14,15 +14,15 @@ const FooterComponent = () => {
           </Col>
         <div className="no mb-1 mt-4">
           <Link className="text-decoration-none">
-            {/* <i className="fa-brands fa-whatsapp"></i> */}
+            <i className="fa-brands fa-whatsapp"></i>
             <h3 className="fw-bold">MISI</h3>
             <p className="desk">- Menyediakan program pelatihan berkualitas tinggi yang relevan dengan kebutuhan industri.
                             - Mengembangkan kurikulum yang adaptif terhadap perkembangan teknologi dan tren digital terkini. 
                             - Menciptakan lingkungan belajar yang suportif, inspiratif, dan kolaboratif.
                             - Membekali peserta dengan keterampilan praktis dan portofolio yang kuat untuk meraih kesuksesan karier.
                             - Membangun komunitas pembelajar digital yang aktif dan saling mendukung.
-            </p>
-            {/* <p className="m-0">+62 813 2929 1886</p> */}
+            </p> 
+            <p className="m-0">+62 813 2929 1886</p> 
           </Link>
         </div>
 
@@ -54,13 +54,14 @@ const FooterComponent = () => {
             <i className="fa-brands fa-linkedin"></i>
             <i className="fa-brands fa-youtube"></i>
           </div>
+
         </Col>  
         </Row>
           <Row>
             <Col>
-              <p className="text-center px-md-0 px-3"> 
+              <p className="  text-center mt-5 mb-0  py-3 w-full"> 
               &copy;Copyright {new Date().getFullYear()}
-              by <span className="fw-bold">muhammadhafizh3,</span> All Right Reserved  
+              by <span className="fw-bold ">muhammadhafizh3,</span> All Right Reserved  
               </p>         
             </Col>
           </Row>

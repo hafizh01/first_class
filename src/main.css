@@ -1,6 +1,11 @@
+/* @import "tailwindcss" */
+
+
+
 *{
     font-family: "poppins", sans-serif;
     scroll-behavior: smooth;
+
 }
 
 :root {

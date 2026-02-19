@@ -1,5 +1,4 @@
 import {Routes, Route} from 'react-router-dom'
-
 import NavbarComponent from "./components/NavbarComponent"
 import FooterComponent from"./components/FooterComponent"
  
@@ -13,7 +12,7 @@ import FaqPage from "./pages/FaqPage"
 function App() {
  return (
 
-     <div>
+     <div className='pt-auto'>
     <NavbarComponent/>
     <Routes>
         <Route  path='/' Component={HomePage}/>

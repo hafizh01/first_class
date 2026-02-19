@@ -5,6 +5,8 @@ import {navLinks} from "../data/index"
 import {Navigate, NavLink, useNavigate, useLocation} from "react-router-dom"
 
 const NavbarComponent = () => {
+  const navigate = useNavigate()
+
   // let navigate = useNavigate()
   // const location = useLocation()
 
@@ -19,7 +21,15 @@ const NavbarComponent = () => {
 useEffect (()=>{
   changeBackgroundColor()
   window.addEventListener("scroll", changeBackgroundColor)
-})
+  return ()=>{
+      window.removeEventListener("scroll", changeBackgroundColor)
+  }
+}, [])
+
+// const handleJoinClick = ()=>{
+//   navigate("")
+
+// }
 
 
 
@@ -47,10 +57,19 @@ useEffect (()=>{
        
 
           </Nav>
+        
+        <div>
 
             <div className='text-center'>
-              <button className='btn btn-outline-danger rounded-3'> Join With Us</button>
+              <button className='btn btn-outline-danger rounded-3 '
+                type='submit'
+                
+              >
+              Join With Us</button>
             </div>
+            
+        
+        </div>
             
         </Navbar.Collapse>
       </Container>
